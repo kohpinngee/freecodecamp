@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<style>
+    body {
+        margin: 0;
+        background-color: #eee;
+    }
+
+    nav {
+        display: flex;
+        flex-flow: row;
+        justify-content: flex-end;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        position: fixed;
+        background-color: #e0ebe8;
+        width: 100%;
+    }
+
+    #right-nav a {
+        color: #008080;
+        text-decoration: none;
+        padding: 5px 30px;
+        font-size: 1.25em;
+    }
+
+    #welcome-section {
+        min-height: 100vh;
+        background: #e0ebe8;
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        justify-content: space-around
+    }
+
+    #welcome-content {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        margin: 0px;
+    }
+
+    #welcome-content p {
+        color: green;
+    }
+
+    #projects {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        background-color: white;
+        margin: 0px;
+    }
+
+    #work-details {
+        display: flex;
+        flex-flow: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .work-item {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        width: 500px;
+    }
+
+    .work-item img {
+        width: 250px;
+        height: 180px;
+        margin: 0px 80px 0 80px;
+        border: 1px solid lightblue;
+    }
+
+    #contact {
+        display: flex;
+        flex-flow: column;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: #C8F7C5;
+        margin: 0px 0px;
+    }
+
+    .contact-detail {
+        margin: 0 10px;
+        display: inline-block;
+        height: 100px;
+        width: 100px;
+        border-radius: 100%;
+        color: green;
+        text-decoration: none;
+
+        border: 2px solid darkgreen;
+        text-align: center;
+        line-height: 100px;
+        background: #e0ebe8;
+    }
+
+    @media only screen and (max-width: 600px) {
+        body {
+            background-color: lightblue;
+        }
+    }
+</style>
+
+<body>
+    <header id="header">
+        <nav id="navbar">
+            <div id="right-nav">
+                <a class="nav-link" href="#features">About</a>
+                <a class="nav-link" href="#video">Work</a>
+                <a class="nav-link" href="#pricing">Contact</a>
+
+            </div>
+        </nav>
+    </header>
+    <div id="welcome-section">
+        <div id="welcome-content">
+            <h1>Hey i'am Mimic.</h1>
+            <p>a web developer</p>
+        </div>
+    </div>
+    <div id="projects">
+        <p>These are some of my projects..</p>
+        <div id="work-details">
+            <section class="work-item">
+                <a href="https://codepen.io/FreeCodeCamp/pen/NNvBQW">
+                    <img src="https://cloud.githubusercontent.com/assets/15967809/17642794/d084d718-6171-11e6-83fa-ede5d0a67ad2.png">
+                </a>
+                <p class="project-tile">Tribute Page</p>
+            </section>
+            <section class="work-item">
+                <a href="https://codepen.io/FreeCodeCamp/pen/ONjoLe">
+                    <img src="https://cloud.githubusercontent.com/assets/15967809/17642794/d084d718-6171-11e6-83fa-ede5d0a67ad2.png">
+                </a>
+                <p class="project-tile">Tribute Page</p>
+            </section>
+            <section class="work-item">
+                <img src="https://cloud.githubusercontent.com/assets/15967809/17642794/d084d718-6171-11e6-83fa-ede5d0a67ad2.png">
+                <p class="project-tile">Tribute Page</p>
+            </section>
+            <section class="work-item">
+                <img src="https://cloud.githubusercontent.com/assets/15967809/17642794/d084d718-6171-11e6-83fa-ede5d0a67ad2.png">
+                <p class="project-tile">Tribute Page</p>
+            </section>
+        </div>
+    </div>
+    <div id="contact">
+        <h3>Let's work together...</h3>
+        <p>How do you take your coffee?</p>
+        <div>
+            <a class="contact-detail" href="#">Facebook</a>
+            <a class="contact-detail" href="#">Twitter</a>
+            <a id="profile-link" class="contact-detail" href="https://github.com/freecodecamp" target="_blank">GitHub</a>
+            <a class="contact-detail" href="#">Email</a>
+            <a class="contact-detail" href="#">Call me</a>
+        </div>
+    </div>
+
+</body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</html>
